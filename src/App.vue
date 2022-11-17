@@ -1,4 +1,3 @@
-
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
@@ -26,5 +25,5 @@ export default {
 
 
 <style lang="scss" scoped>
-  @use './style/general.scss'
+  @use './styles/general.scss'
 </style>
