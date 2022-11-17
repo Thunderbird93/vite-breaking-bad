@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
@@ -10,9 +11,14 @@ export default {
     AppFooter,
     AppMain
   },
-  data(){
-    return{
-    }
+  mounted(){
+    axios.get('https://www.breakingbadapi.com/api/characters')
+    .then(result =>{
+      console.log(result.data)
+    })
+    .catch.log(error =>{
+      console.log(errore)
+    })
   }
 }
 </script>
