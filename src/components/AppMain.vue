@@ -4,7 +4,15 @@
 
 <script>
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    components: {
+        AppCard,
+    },
+    data(){
+        return{
+            store,
+        }
+    }
 }
 </script>
 
