@@ -11,14 +11,20 @@ export default {
     AppFooter,
     AppMain
   },
-  mounted(){
-    axios.get('https://www.breakingbadapi.com/api/characters')
+  methods:{
+    getCharacters(){
+      axios.get('https://www.breakingbadapi.com/api/characters')
     .then(result =>{
       console.log(result.data)
     })
     .catch.log(error =>{
       console.log(errore)
     })
+    }
+  },
+
+  mounted(){
+    this.getCharacters();
   }
 }
 </script>
