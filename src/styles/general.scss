@@ -1,9 +1,0 @@
-@use './partials/-variables.scss' as *;
-
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/@fontsource/montserrat/index.css';
-
-body{
-    background-color: #303A45;
-    min-height: 100vh;
-}

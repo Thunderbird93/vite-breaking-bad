@@ -34,18 +34,19 @@ import {store} from "../data/store";
         <div
         class="col-4"
         v-for="(character, index) in store.inData"
-        :key="index"
-        >
+        :key="index">
         <AppCard :chInfo="character" />
+        </div>
+        <div>
+            <p>Hi!</p>
+        </div>
     </div>
-</div>
 </template>
 
 
 <style lang="scss">
-@use "../styles/partials/-variables.scss"
     body{
-        background-color: $primary-color;
+        background-color: green;
         .container{
             height: 100vh;
         }

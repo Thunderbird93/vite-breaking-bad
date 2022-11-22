@@ -1,16 +1,17 @@
 <script>
-import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
-import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+import axios from 'axios';
 
 export default {
   name: 'App',
   components:{
     AppHeader,
+    AppMain,
     AppFooter,
-    AppMain
   },
+  /*
   methods:{
     getCharacters(){
       axios.get('https://www.breakingbadapi.com/api/characters')
@@ -26,6 +27,7 @@ export default {
   mounted(){
     this.getCharacters();
   }
+*/  
 }
 </script>
 
@@ -37,5 +39,5 @@ export default {
 
 
 <style lang="scss" scoped>
-  @use './styles/general.scss'
+
 </style>
