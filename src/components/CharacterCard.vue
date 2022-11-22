@@ -17,8 +17,8 @@ export default {
         <img :src=character.img :alt="character.name">
     </div>
     <div class="info">
-        <h3>{{character.name}}</h3>
-        <h5>{{character.category}}</h5>
+        <h4>{{character.name}}</h4>
+        <h6>{{character.category}}</h6>
         <h6>{{character.status}}</h6>
     </div>
   </div>
@@ -32,10 +32,14 @@ img {
 
 .carta{
     border: 1px dotted black;
-    max-width: calc(100%/5);
+    max-width: calc(100%/6);
     display: flex;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
+    h4, h6{
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>
