@@ -1,6 +1,9 @@
 <script>
 export default {
     name: 'AppHeader',
+    props:{
+        title: String
+    }
 }
 </script>
 
@@ -10,13 +13,12 @@ export default {
             <div class="logo">
                 <img src="/breakingbad.jpg" alt="logo">
             </div>
-            <h1>Breaking Bad Api</h1>
+            <h2> {{title}} </h2>
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
-    
 .container{
     display: flex;
     align-items: center;
