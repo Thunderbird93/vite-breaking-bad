@@ -1,12 +1,13 @@
 <script>
 export default {
-    name: 'AppHeader',
+    name: 'CharachterList',
 }
 </script>
 
 <template>
   
 </template>
+
 
 <style lang="scss" scoped>
 

@@ -1,42 +1,25 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
-import axios from 'axios';
+import AppHeader from "./components/AppHeader.vue";
+import AppSearch from "./components/AppSearch.vue";
+import CharacterList from "./components/CharacterList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components:{
     AppHeader,
-    AppMain,
-    AppFooter,
-  },
-  /*
-  methods:{
-    getCharacters(){
-      axios.get('https://www.breakingbadapi.com/api/characters')
-    .then(result =>{
-      console.log(result.data)
-    })
-    .catch.log(error =>{
-      console.log(errore)
-    })
-    }
-  },
-
-  mounted(){
-    this.getCharacters();
+    AppSearch,
+    CharacterList,
   }
-*/  
 }
 </script>
 
 <template>
   <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <main>
+    <AppSearch />
+    <CharacterList />
+  </main>
 </template>
-
 
 <style lang="scss" scoped>
 
