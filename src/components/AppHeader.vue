@@ -19,10 +19,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+
 .container{
     display: flex;
-    align-items: center;
-    margin: 20px;    
+    align-items: center;  
     .logo{
         height: 50px;
         margin: 10px;
@@ -30,5 +31,5 @@ export default {
         height: 100%;
         }
     }
-}   
+} 
 </style>
